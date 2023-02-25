@@ -1,5 +1,6 @@
 import 'package:eventorg/pages/home_page.dart';
 import 'package:eventorg/pages/test.dart';
+import 'package:eventorg/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',      
-      home: HomePage(),
+      home: Splash(),
     );
   }
 }
