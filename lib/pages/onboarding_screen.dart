@@ -17,6 +17,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
              'Welcome to\neventOrg',
