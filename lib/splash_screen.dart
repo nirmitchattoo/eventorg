@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:eventorg/pages/home_page.dart';
+import 'package:eventorg/pages/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
@@ -20,7 +21,7 @@ class _SplashState extends State<Splash> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => HomePage(),
+          builder: (context) => OnboardingScreen(),
         ),
       ),
     );

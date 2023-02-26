@@ -1,3 +1,4 @@
+import 'package:eventorg/pages/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'community_form.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
@@ -153,20 +154,25 @@ class _HomePageState extends State<HomePage> {
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    SizedBox(height: 8),
-                                    CircleAvatar(
-                                      radius: 20,
-                                      backgroundImage: AssetImage('assets/undraw_Coding_re_iv62.png'),
-                                    ),
-                                    SizedBox(height: 8),
-                                    Text(
-                                      'Coding Club',
-                                      style: TextStyle(fontSize: 10),
-                                    )
-                                  ],
+                                child: GestureDetector(
+                                  onTap: (() {
+                                    Navigator.push(context, MaterialPageRoute(builder: ((context) => OnboardingScreen())));
+                                  }),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      SizedBox(height: 8),
+                                      CircleAvatar(
+                                        radius: 20,
+                                        backgroundImage: AssetImage('assets/undraw_Coding_re_iv62.png'),
+                                      ),
+                                      SizedBox(height: 8),
+                                      Text(
+                                        'Coding Club',
+                                        style: TextStyle(fontSize: 10),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                               Padding(
