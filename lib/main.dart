@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       ),    
       home: Splash(),
       routes: {
-        '/': (context) => Splash(),
+        //'/': (context) => Splash(),
         OnboardingScreen.routeName: (context) => OnboardingScreen(),
         LoginScreen.routeName: (context) => LoginScreen(),
         SignupScreen.routeName:(context) => SignupScreen()
