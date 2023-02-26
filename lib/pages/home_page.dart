@@ -51,10 +51,7 @@ class _HomePageState extends State<HomePage> {
         ),
         bottomNavigationBar: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          
-          
           child: SalomonBottomBar(
-            
             currentIndex: _currentIndex,
             onTap: (i) => setState(() => _currentIndex = i),
             items: [
@@ -84,7 +81,6 @@ class _HomePageState extends State<HomePage> {
                   title: Text("Notification"),
                   selectedColor: Colors.blueAccent,
                   unselectedColor: Colors.white),
-        
               /// Profile
               SalomonBottomBarItem(
                   icon: Icon(Icons.person),

@@ -1,10 +1,10 @@
 import 'dart:async';
-
 import 'package:eventorg/pages/home_page.dart';
 import 'package:eventorg/pages/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
+  static const String id = 'Splash_Screen';
   const Splash({super.key});
   
   @override
